@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import HomePage from './components/HomePage.js';
+import Dashboard from './components/Dashboard.js';
+import AboutUs from './components/AboutUs.js';
+import Profile from './components/Profile.js';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Sidebar from './components/SideBar/SideBar.js';
+import Sidebar from './components/SideBar.js';
 import './styling/index.css';
 
 const Routing = () => {
@@ -15,12 +18,9 @@ const Routing = () => {
           </div>
           <div class="right">
             <Route path='/' exact component={HomePage} />
-            <Route path='/about' component={HomePage} />
-            <Route path='/products' component={HomePage} />
-            <Route path='/contact-us' component={HomePage} />
-            <Route path='/sign-up' component={HomePage} />
-            <Route path='/marketing' component={HomePage} />
-            <Route path='/consulting' component={HomePage} />
+            <Route path='/about' component={AboutUs} />
+            <Route path='/dashboard' component={Dashboard} />
+            <Route path='/profile' component={Profile} />
           </div>
         </div>
       </Switch>

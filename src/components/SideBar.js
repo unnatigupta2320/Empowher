@@ -10,9 +10,8 @@ import {
 import { FaList, FaRegHeart } from "react-icons/fa";
 import { FiHome, FiLogOut, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
 import { RiPencilLine } from "react-icons/ri";
-import { BiCog } from "react-icons/bi";
 import "react-pro-sidebar/dist/css/styles.css";
-import "./../../styling/Header.css";
+import "./../styling/Header.css";
 import { Link } from "react-router-dom";
 
 
@@ -56,21 +55,21 @@ const SideBar = () => {
                                 </li>
                             </MenuItem>
                             <MenuItem icon={<FaList />}>
-                            <li className='nav-item'>
+                                <li className='nav-item'>
                                     <Link to='/about' className='nav-links'>
                                         About Us
                                     </Link>
                                 </li>
                             </MenuItem>
                             <MenuItem icon={<FaRegHeart />}>
-                            <li className='nav-item'>
+                                <li className='nav-item'>
                                     <Link to='/dashboard' className='nav-links'>
                                         Dashboard
                                     </Link>
                                 </li>
                             </MenuItem>
                             <MenuItem icon={<RiPencilLine />}>
-                            <li className='nav-item'>
+                                <li className='nav-item'>
                                     <Link to='/profile' className='nav-links'>
                                         Profile
                                     </Link>
