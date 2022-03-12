@@ -68,6 +68,13 @@ const SideBar = () => {
                                     </Link>
                                 </li>
                             </MenuItem>
+                            <MenuItem icon={<FaList />}>
+                                <li className='nav-item'>
+                                    <Link to='/courses' className='nav-links'>
+                                        Courses
+                                    </Link>
+                                </li>
+                            </MenuItem>
                             <MenuItem icon={<RiPencilLine />}>
                                 <li className='nav-item'>
                                     <Link to='/profile' className='nav-links'>

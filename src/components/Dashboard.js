@@ -19,25 +19,40 @@ function Dashboard() {
                     interval={2000}
                     showThumbs={false}>
                     <div>
-                        <img src={speaker} alt="TechGeeks" />
-                        <p className="legend">Tech Geeks</p>
+                        <img src={techgeek} alt="TechGeeks" />
+                        <p className="legend">Technology</p>
                         <div class="contentOnImage" >
                             <h2>
                                 <Box component="span">
-                                    <span>Campaign Management Platform
-                                    </span>
+                                    <span>Technology</span>
                                 </Box>
                             </h2>
                             <br />
                         </div>
                     </div>
                     <div>
-                        <img src={techgeek} alt="Enterpreneurs" />
-                        <p className="legend">Enterpreneurs</p>
+                        <img src={Enterpreneurs} alt="Enterpreneurs" />
+                        <p className="legend">Enterpreneurship</p>
+                        <div class="contentOnImage" >
+                            <h2>
+                                <Box component="span">
+                                    <span>Enterpreneurship</span>
+                                </Box>
+                            </h2>
+                            <br />
+                        </div>
                     </div>
                     <div>
-                        <img src={Enterpreneurs} alt="Social Influencers" />
-                        <p className="legend">Social Influencers</p>
+                        <img src={speaker} alt="Social Influencers" />
+                        <p className="legend">Leadership</p>
+                        <div class="contentOnImage" >
+                            <h2>
+                                <Box component="span">
+                                    <span>Leadership</span>
+                                </Box>
+                            </h2>
+                            <br />
+                        </div>
                     </div>
                 </Carousel>
             </div>
