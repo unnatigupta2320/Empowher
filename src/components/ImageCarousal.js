@@ -1,7 +1,7 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import React from "react";
-import b2b3 from '../resources/b2b3.jpg';
+import b2b3 from '../resources/empower.PNG';
 import home from '../resources/home.jpg';
 import '../styling/CarouselImage.css';
 import Box from '@material-ui/core/Box';

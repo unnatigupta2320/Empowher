@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import speaker from '../resources/speaker.jpg';
 import techgeek from '../resources/techgeek.jpg';
 import Enterpreneurs from '../resources/enterpreneurs.jpg';
+import CardGrid from './CardGrid.js';
 import './../styling/CarouselImage.css'
 import Box from '@material-ui/core/Box';
+import { Link } from "react-router-dom";
 
 function Dashboard() {
     return (
@@ -16,11 +17,15 @@ function Dashboard() {
                     height={"90%"}
                     autoPlay={true}
                     infiniteLoop={true}
-                    interval={2000}
+                    interval={3000}
                     showThumbs={false}>
                     <div>
                         <img src={techgeek} alt="TechGeeks" />
-                        <p className="legend">Technology</p>
+                        <li className='legend'>
+                            <Link style ={{color:'white', fontSize:'20px'}} to={{ pathname: "https://medium.com/" }} target="_blank" >
+                                Click Here for Resources
+                            </Link>
+                        </li>
                         <div class="contentOnImage" >
                             <h2>
                                 <Box component="span">
@@ -32,7 +37,11 @@ function Dashboard() {
                     </div>
                     <div>
                         <img src={Enterpreneurs} alt="Enterpreneurs" />
-                        <p className="legend">Enterpreneurship</p>
+                        <li className='legend'>
+                            <Link style ={{color:'white', fontSize:'20px'}} to={{ pathname: "https://medium.com/" }} target="_blank" >
+                                Click Here for Resources
+                            </Link>
+                        </li>
                         <div class="contentOnImage" >
                             <h2>
                                 <Box component="span">
@@ -44,7 +53,11 @@ function Dashboard() {
                     </div>
                     <div>
                         <img src={speaker} alt="Social Influencers" />
-                        <p className="legend">Leadership</p>
+                        <li className='legend'>
+                            <Link style ={{color:'white', fontSize:'20px'}} to={{ pathname: "https://medium.com/" }} target="_blank" >
+                                Click Here for Resources
+                            </Link>
+                        </li>
                         <div class="contentOnImage" >
                             <h2>
                                 <Box component="span">
@@ -56,6 +69,7 @@ function Dashboard() {
                     </div>
                 </Carousel>
             </div>
+            <div><CardGrid/></div>
         </div>
 
     );
