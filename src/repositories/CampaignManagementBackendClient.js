@@ -18,7 +18,7 @@ export default class CampaignManagementBackendClient{
         return response.data;
     }
     
-   yogaRegistrationPost(data) {
+   feedbackPost(data) {
        var response;       
         response = axios.post(
             `https://yogaclassesenrollment.azurewebsites.net/enrollment`, data,

@@ -7,9 +7,8 @@ import {
     SidebarFooter,
     SidebarContent,
 } from "react-pro-sidebar";
-import { FaList, FaRegHeart } from "react-icons/fa";
-import { FiHome, FiLogOut, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
-import { RiPencilLine } from "react-icons/ri";
+import { FaList, FaRegHeart, FaChartBar, FaCommentAlt } from "react-icons/fa";
+import { FiHome, FiLogOut, FiArrowLeftCircle, FiArrowRightCircle, FiUser } from "react-icons/fi";
 import "react-pro-sidebar/dist/css/styles.css";
 import "./../styling/Header.css";
 import { Link } from "react-router-dom";
@@ -29,7 +28,6 @@ const SideBar = () => {
     return (
         <>
             <div id="header">
-                {/* collapsed props to change menu size using menucollapse state */}
                 <ProSidebar collapsed={menuCollapse}>
                     <SidebarHeader>
                         <div className="logotext">
@@ -47,21 +45,14 @@ const SideBar = () => {
                     </SidebarHeader>
                     <SidebarContent>
                         <Menu iconShape="square">
-                            <MenuItem active={true} icon={<FiHome />}>
-                                <li className='nav-item'>
-                                    <Link to='/' className='nav-links'>
-                                        Home
-                                    </Link>
-                                </li>
-                            </MenuItem>
-                            <MenuItem icon={<FaList />}>
+                            <MenuItem icon={<FaRegHeart />}>
                                 <li className='nav-item'>
                                     <Link to='/about' className='nav-links'>
                                         About Us
                                     </Link>
                                 </li>
                             </MenuItem>
-                            <MenuItem icon={<FaRegHeart />}>
+                            <MenuItem icon={<FaChartBar />}>
                                 <li className='nav-item'>
                                     <Link to='/dashboard' className='nav-links'>
                                         Dashboard
@@ -75,7 +66,7 @@ const SideBar = () => {
                                     </Link>
                                 </li>
                             </MenuItem>
-                            <MenuItem icon={<RiPencilLine />}>
+                            <MenuItem icon={<FiUser />}>
                                 <li className='nav-item'>
                                     <Link to='/profile' className='nav-links'>
                                         Profile
@@ -86,7 +77,13 @@ const SideBar = () => {
                     </SidebarContent>
                     <SidebarFooter>
                         <Menu iconShape="square">
-                            <MenuItem icon={<FiLogOut />}>Logout</MenuItem>
+                        <MenuItem icon={<FaCommentAlt />}>
+                                <li className='nav-item'>
+                                    <Link to='/feedback' className='nav-links'>
+                                        FeedBack
+                                    </Link>
+                                </li>
+                            </MenuItem>
                         </Menu>
                     </SidebarFooter>
                 </ProSidebar>

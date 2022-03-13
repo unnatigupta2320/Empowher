@@ -45,6 +45,6 @@ h2 {
 }
 
 .carousel .slide img {
-   max-height: 500px;  /* change this to whatever you want */
+   max-height: 500px; 
    width: 100%;
 }

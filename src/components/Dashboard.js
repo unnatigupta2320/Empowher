@@ -9,6 +9,7 @@ import './../styling/CarouselImage.css'
 import Box from '@material-ui/core/Box';
 import { Link } from "react-router-dom";
 
+// Author - Unnati Gupta
 function Dashboard() {
     return (
         <div>
@@ -22,7 +23,7 @@ function Dashboard() {
                     <div>
                         <img src={techgeek} alt="TechGeeks" />
                         <li className='legend'>
-                            <Link style ={{color:'white', fontSize:'20px'}} to={{ pathname: "https://medium.com/" }} target="_blank" >
+                            <Link style ={{color:'white', fontSize:'20px'}} to={{ pathname: "https://www.coursera.org/courses?query=software%20engineering" }} target="_blank" >
                                 Click Here for Resources
                             </Link>
                         </li>
@@ -38,7 +39,7 @@ function Dashboard() {
                     <div>
                         <img src={Enterpreneurs} alt="Enterpreneurs" />
                         <li className='legend'>
-                            <Link style ={{color:'white', fontSize:'20px'}} to={{ pathname: "https://medium.com/" }} target="_blank" >
+                            <Link style ={{color:'white', fontSize:'20px'}} to={{ pathname: "https://www.edx.org/course/creativity-entrepreneurship" }} target="_blank" >
                                 Click Here for Resources
                             </Link>
                         </li>
@@ -54,7 +55,7 @@ function Dashboard() {
                     <div>
                         <img src={speaker} alt="Social Influencers" />
                         <li className='legend'>
-                            <Link style ={{color:'white', fontSize:'20px'}} to={{ pathname: "https://medium.com/" }} target="_blank" >
+                            <Link style ={{color:'white', fontSize:'20px'}} to={{ pathname: "https://online.hbs.edu/courses/leadership-principles/" }} target="_blank" >
                                 Click Here for Resources
                             </Link>
                         </li>

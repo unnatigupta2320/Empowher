@@ -8,7 +8,9 @@ import Button from '@mui/material/Button';
 import growthmindset from '../resources/growthmindset.png';
 import scb from '../resources/scbhackathon.png';
 import blockchain from '../resources/blockchain.png';
+import { Link } from "react-router-dom";
 
+// Author - Unnati Gupta
 export default function Cardgrid() {
     return (
         <div style={{ marginLeft: '30%' }}>
@@ -29,7 +31,9 @@ export default function Cardgrid() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="medium">Learn More</Button>
+                    <Link style={{ color: 'white', fontSize: '20px' }} to={{ pathname: "https://www.mindsethealth.com/matter/growth-vs-fixed-mindset" }} target="_blank" >
+                        <Button size="medium">Learn More</Button>
+                    </Link>
                 </CardActions>
             </Card>
             <Card sx={{ maxWidth: '60%', marginBottom: '6%' }}>
@@ -48,7 +52,9 @@ export default function Cardgrid() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="medium">Learn More</Button>
+                    <Link style={{ color: 'white', fontSize: '20px' }} to={{ pathname: "https://www.sc.com/en/global-careers/early-careers/apprenticeships/" }} target="_blank" >
+                        <Button size="medium">Learn More</Button>
+                    </Link>
                 </CardActions>
             </Card>
             <Card sx={{ maxWidth: '60%', marginBottom: '6%' }}>
@@ -62,12 +68,14 @@ export default function Cardgrid() {
                         Blockchain
                     </Typography>
                     <Typography variant="body2" color="text.primary">
-                    A blockchain is a distributed database that is shared among the nodes of a computer network. As a database, a blockchain stores information electronically in digital format. 
-                    Blockchains are best known for their crucial role in cryptocurrency systems, such as Bitcoin, for maintaining a secure and decentralized record of transactions. 
+                        A blockchain is a distributed database that is shared among the nodes of a computer network. As a database, a blockchain stores information electronically in digital format.
+                        Blockchains are best known for their crucial role in cryptocurrency systems, such as Bitcoin, for maintaining a secure and decentralized record of transactions.
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="medium">Learn More</Button>
+                    <Link style={{ color: 'white', fontSize: '20px' }} to={{ pathname: "https://www.investopedia.com/terms/b/blockchain.asp" }} target="_blank" >
+                        <Button size="medium">Learn More</Button>
+                    </Link>
                 </CardActions>
             </Card>
         </div>

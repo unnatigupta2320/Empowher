@@ -1,9 +1,8 @@
 export default class CustomerData {
     name;
     email;
-    password;
+    profession;
     contactNumber;
     age;
-    amount;
-    membershipPeriod;
+    feedback;
 }
