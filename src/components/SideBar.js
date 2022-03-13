@@ -8,7 +8,7 @@ import {
     SidebarContent,
 } from "react-pro-sidebar";
 import { FaList, FaRegHeart, FaChartBar, FaCommentAlt } from "react-icons/fa";
-import { FiHome, FiLogOut, FiArrowLeftCircle, FiArrowRightCircle, FiUser } from "react-icons/fi";
+import { FiArrowLeftCircle, FiArrowRightCircle, FiUser } from "react-icons/fi";
 import "react-pro-sidebar/dist/css/styles.css";
 import "./../styling/Header.css";
 import { Link } from "react-router-dom";
