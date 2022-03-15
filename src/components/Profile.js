@@ -1,6 +1,7 @@
 import React from "react";
 import "./../styling/ProfileStyles.css";
 
+// Author - Princy Kumari
 function Profile() {
   return (
     <div className="Profile">

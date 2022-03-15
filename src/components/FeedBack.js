@@ -6,6 +6,7 @@ import CampaignManagementBackendClient from "./../repositories/CampaignManagemen
 import CustomerData from "../models/CustomerData";
 import { Link } from "react-router-dom";
 
+// Author - Unnati Gupta
 const emailAddressRegEx = RegExp(
     /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/
 );
