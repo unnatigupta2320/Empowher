@@ -1,4 +1,4 @@
-export default class CustomerData {
+export default class FeedbackData {
     name;
     email;
     profession;

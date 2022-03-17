@@ -3,7 +3,7 @@ import React from "react";
 import '../styling/CarouselImage.css';
 import { Button, TextField } from "@material-ui/core";
 import CampaignManagementBackendClient from "./../repositories/CampaignManagementBackendClient";
-import CustomerData from "../models/CustomerData";
+import FeedbackData from "../models/FeedBackData";
 import { Link } from "react-router-dom";
 
 // Author - Unnati Gupta
@@ -38,7 +38,7 @@ export default class FeedBack extends React.Component {
     onSubmit = e => {
         e.preventDefault();
         
-        var customerData = new CustomerData();
+        var customerData = new FeedbackData();
         customerData.name = this.state.name;
         customerData.email = this.state.email;
         customerData.password = this.state.profession;

@@ -1,0 +1,5 @@
+{
+    "appService.showBuildDuringDeployPrompt": false,
+    "appService.defaultWebAppToDeploy": "/subscriptions/309f86cf-4b6d-4a71-9825-c63ed8a04845/resourceGroups/sm/providers/Microsoft.Web/sites/empowher",
+    "appService.deploySubpath": "."
+}
